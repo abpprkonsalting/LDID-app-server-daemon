@@ -1,0 +1,33 @@
+####################################################################################
+# Archivo de configuraci'on de la aplicaci'on LDID_Servidor_informador
+#
+# En este archivo de configuraci'on los comentarios van en este bloque inicial, y no en
+# ninguna otra parte, y comienzan con el caracter #.
+# Las variables tienen el orden que se explica m'as abajo y deben ir inmediatamente debajo
+# del bloque de comentario, sin espacios entre ellas.
+#
+# Esta aplicaci'on corre sobre los servidores de seguridad de los sistemas de asistencia
+# t'ecnica remota y de telemedicina, y su objetivo es informar de manera per'iodica a un
+# servidor central albergado en una PC con direcci'on IP real, la direcci'on IP del
+# servidor donde est'a siendo ejecutada. El objetivo de esto es que los clientes puedan 
+# conocer donde est'a albergado el servidor de su aplicaci'on espec'ifica en caso de que
+# este no cuente con una direcci'on IP real fija, sino din'amica.
+#
+# Los par'ametros de configuraci'on son los siguientes:
+#
+# 1 - Direcci'on IP real fija del servidor LDID (localizador de direcciones IP din'amicas)
+# 2 - Puerto del servidor LDID donde est'a escuchando el servicio)
+# 3 - Nombre con el que se va a registrar el servidor en la tabla del servidor LDID
+#     (Con este nombre es que los clientes van a solicitar la direcci'on IP al servidor LDID)
+# 4 - Puerto donde el servidor va a estar esperando las respuestas de confirmaci'on desde
+#     el servidor LDID. Debiera ser el mismo que el puerto donde est'a escuchando el servidor
+#     LDID, pero no es obligatorio.
+# 5 - Tiempo en segundos entre env'io de mensajes de actualizaci'on de la direcci'on IP al 
+#     servidor LDID
+#
+#########################################################################################
+200.55.134.124
+1190
+Serv-teleEEG-Venezuela
+1190
+60
